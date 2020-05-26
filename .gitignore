@@ -37,6 +37,7 @@ yarn-error.log
 
 android
 ios
+!*/android/app/build.gradle
 
 # BUCK
 buck-out/

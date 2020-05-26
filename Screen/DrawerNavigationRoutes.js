@@ -19,7 +19,9 @@ const FirstActivity_StackNavigator = createStackNavigator({
     screen: HomeScreen,
     navigationOptions: ({navigation}) => ({
       title: 'Home Screen',
-      headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
+      headerRight: () => (
+        <NavigationDrawerHeader navigationProps={navigation} />
+      ),
       headerStyle: {
         backgroundColor: '#ff4000',
       },
@@ -33,7 +35,9 @@ const SecondActivity_StackNavigator = createStackNavigator({
     screen: SettingsScreen,
     navigationOptions: ({navigation}) => ({
       title: 'Setting Screen',
-      headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
+      headerRight: () => (
+        <NavigationDrawerHeader navigationProps={navigation} />
+      ),
       headerStyle: {
         backgroundColor: '#ff4000',
       },
@@ -62,6 +66,7 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
     drawerOpenRoute: 'DrawerOpen',
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle',
+    drawerPosition: 'right',
   },
 );
 export default DrawerNavigatorRoutes;

@@ -5,8 +5,8 @@
 import React from 'react';
 
 //Import Navigators from React Navigation
-import { createAppContainer, createSwitchNavigator } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
 //Import all the screens needed
 
@@ -14,6 +14,7 @@ import SplashScreen from './Screen/SplashScreen';
 import LoginScreen from './Screen/LoginScreen';
 import RegisterScreen from './Screen/RegisterScreen';
 import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
+import AppIntroSlider from 'react-native-app-intro-slider';
 
 const Auth = createStackNavigator({
   //Stack Navigator for Login and Sign up Screen
@@ -37,7 +38,7 @@ const Auth = createStackNavigator({
 
 /* Switch Navigator for those screens which needs to be switched only once
   and we don't want to switch back once we switch from them to the next one */
-const App = createSwitchNavigator({ 
+const App = createSwitchNavigator({
   SplashScreen: {
     /* SplashScreen which will come once for 5 Seconds */
     screen: SplashScreen,
