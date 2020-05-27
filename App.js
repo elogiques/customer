@@ -15,6 +15,7 @@ import LoginScreen from './Screen/LoginScreen';
 import RegisterScreen from './Screen/RegisterScreen';
 import DrawerNavigationRoutes from './Screen/DrawerNavigationRoutes';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import SliderScreen from './Screen/SliderScreen';
 
 const Auth = createStackNavigator({
   //Stack Navigator for Login and Sign up Screen
@@ -41,7 +42,8 @@ const Auth = createStackNavigator({
 const App = createSwitchNavigator({
   SplashScreen: {
     /* SplashScreen which will come once for 5 Seconds */
-    screen: SplashScreen,
+    //screen: SplashScreen,
+    screen: SliderScreen,
     navigationOptions: {
       /* Hiding header for Splash Screen */
       headerShown: false,

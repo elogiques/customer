@@ -58,7 +58,7 @@ const CustomSidebarMenu = props => {
     <View style={stylesSidebar.sideMenuContainer}>
       <View style={stylesSidebar.profileHeader}>
         <View style={stylesSidebar.profileHeaderPicCircle}>
-          <Text style={{fontSize: 25, color: '#307ecc'}}>
+          <Text style={{fontSize: 25, color: '#fac52e'}}>
             {'About React'.charAt(0)}
           </Text>
         </View>
@@ -96,7 +96,7 @@ const stylesSidebar = StyleSheet.create({
   sideMenuContainer: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#307ecc',
+    backgroundColor: '#fac52e',
     paddingTop: 40,
     color: 'white',
   },

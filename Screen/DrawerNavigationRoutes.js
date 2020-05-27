@@ -23,7 +23,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
         <NavigationDrawerHeader navigationProps={navigation} />
       ),
       headerStyle: {
-        backgroundColor: '#ff4000',
+        backgroundColor: '#fac52e',
       },
       headerTintColor: '#fff',
     }),
@@ -39,7 +39,7 @@ const SecondActivity_StackNavigator = createStackNavigator({
         <NavigationDrawerHeader navigationProps={navigation} />
       ),
       headerStyle: {
-        backgroundColor: '#ff4000',
+        backgroundColor: '#fac52e',
       },
       headerTintColor: '#fff',
     }),
@@ -67,6 +67,7 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle',
     drawerPosition: 'right',
+    drawerWidth: '100%',
   },
 );
 export default DrawerNavigatorRoutes;
