@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, StatusBar} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import AsyncStorage from '@react-native-community/async-storage';
+
 import App from './App';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -70,6 +72,12 @@ export default class AppSlider extends React.Component {
     );
   };
   _onDone = () => {
+    AsyncStorage.getItem('user_id').then(value =>
+      props.navigation.navigate(
+        value === null ? 'Auth' : 'DrawerNavigationRoutes',
+      ),
+    );
+
     this.setState({showRealApp: true});
   };
 
