@@ -12,15 +12,18 @@ const slides = [
     text: 'Description.\nSay something cool',
     image: require('./Image/1.jpg'),
     backgroundColor: '#59b2ab',
+    index: 0,
   },
   {
     key: 2,
+    index: 1,
     title: 'Title 2',
     text: 'Other cool stuff',
     image: require('./Image/2.jpg'),
     backgroundColor: '#febe29',
   },
   {
+    index: 1,
     key: 3,
     title: 'Rocket guy',
     text: "I'm already out of descriptions\n\nLorem ipsum bla bla bla",
@@ -33,7 +36,7 @@ export default class AppSlider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showRealApp: true,
+      showRealApp: false,
     };
   }
 
@@ -71,7 +74,7 @@ export default class AppSlider extends React.Component {
   };
 
   render() {
-    if (this.state.showRealApp) {
+    if (this.state.showRealApp == false) {
       return (
         <View style={{flex: 1}}>
           <StatusBar translucent backgroundColor="transparent" />

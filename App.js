@@ -42,8 +42,8 @@ const Auth = createStackNavigator({
 const App = createSwitchNavigator({
   SplashScreen: {
     /* SplashScreen which will come once for 5 Seconds */
-    //screen: SplashScreen,
-    screen: SliderScreen,
+    screen: SplashScreen,
+    //screen: SliderScreen,
     navigationOptions: {
       /* Hiding header for Splash Screen */
       headerShown: false,
