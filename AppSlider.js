@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const slides = [
   {
-    key: 1,
+    key: '1',
     title: 'Title 1',
     text: 'Description.\nSay something cool',
     image: require('./Image/1.jpg'),
@@ -17,7 +17,7 @@ const slides = [
     index: 0,
   },
   {
-    key: 2,
+    key: '2',
     index: 1,
     title: 'Title 2',
     text: 'Other cool stuff',
@@ -26,7 +26,7 @@ const slides = [
   },
   {
     index: 1,
-    key: 3,
+    key: '3',
     title: 'Rocket guy',
     text: "I'm already out of descriptions\n\nLorem ipsum bla bla bla",
     image: require('./Image/3.jpg'),
@@ -43,12 +43,13 @@ export default class AppSlider extends React.Component {
   }
 
   _renderItem = ({item}) => {
+    console.log(item.backgroundColor);
     return (
       <View
         style={[
           styles.slide,
           {
-            backgroundColor: item.bg,
+            backgroundColor: item.backgroundColor,
           },
         ]}>
         <Text style={styles.title}>{item.title}</Text>

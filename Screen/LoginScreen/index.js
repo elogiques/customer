@@ -75,7 +75,8 @@ const LoginScreen = props => {
 
   return (
     <View style={styles.mainBody}>
-      <StatusBar backgroundColor="blue" />
+      <StatusBar translucent backgroundColor="transparent" />
+
       <Loader loading={loading} />
       <ScrollView keyboardShouldPersistTaps="handled">
         <View style={{marginTop: 100}}>

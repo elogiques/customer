@@ -38,7 +38,7 @@ const Auth = createStackNavigator({
   and we don't want to switch back once we switch from them to the next one */
 const App = createSwitchNavigator({
   //
-  SplashScreen: {
+  // SplashScreen: {
   /* SplashScreen which will come once for 5 Seconds */
   //screen: SplashScreen,
   //screen: SliderScreen,
@@ -60,5 +60,4 @@ const App = createSwitchNavigator({
     },
   },
 });
-
 export default createAppContainer(App);

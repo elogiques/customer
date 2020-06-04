@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   mainBody: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#307ecc',
+    backgroundColor: '#febe29',
   },
   SectionStyle: {
     flexDirection: 'row',
@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
     marginLeft: 35,
     marginRight: 35,
     margin: 10,
+  },
+
+  StatusBar: {
+    backgroundColor: '#febe29',
   },
   buttonStyle: {
     backgroundColor: '#7DE24E',
