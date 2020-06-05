@@ -1,62 +1,48 @@
-import React from 'react';
-import {StyleSheet} from 'react-native';
+const React = require('react-native');
 
-const styles = StyleSheet.create({
-  mainBody: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#febe29',
-  },
-  SectionStyle: {
-    flexDirection: 'row',
-    height: 40,
-    marginTop: 20,
-    marginLeft: 35,
-    marginRight: 35,
-    margin: 10,
-  },
+const {StyleSheet} = React;
 
-  StatusBar: {
-    backgroundColor: '#febe29',
-  },
-  buttonStyle: {
-    backgroundColor: '#7DE24E',
-    borderWidth: 0,
-    color: '#FFFFFF',
-    borderColor: '#7DE24E',
-    height: 40,
-    alignItems: 'center',
-    borderRadius: 30,
-    marginLeft: 35,
-    marginRight: 35,
-    marginTop: 20,
-    marginBottom: 20,
-  },
-  buttonTextStyle: {
-    color: '#FFFFFF',
-    paddingVertical: 10,
-    fontSize: 16,
-  },
-  inputStyle: {
+export default {
+  containerView: {
     flex: 1,
-    color: 'white',
-    paddingLeft: 15,
-    paddingRight: 15,
+    backgroundColor: '#22bcb5',
+  },
+  loginScreenContainer: {
+    flex: 1,
+    alignContent: 'center',
+  },
+  logoText: {
+    fontSize: 40,
+    fontWeight: '800',
+    marginTop: 150,
+    marginBottom: 30,
+    textAlign: 'center',
+  },
+  loginFormView: {
+    flex: 1,
+  },
+  loginFormTextInput: {
+    height: 43,
+    fontSize: 14,
+    borderRadius: 5,
     borderWidth: 1,
-    borderRadius: 10,
-    borderColor: 'white',
+    borderColor: '#eaeaea',
+    backgroundColor: '#fafafa',
+    paddingLeft: 10,
+    marginLeft: 15,
+    marginRight: 15,
+    marginTop: 5,
+    marginBottom: 5,
   },
-  registerTextStyle: {
-    color: '#FFFFFF',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 14,
+  loginButton: {
+    backgroundColor: '#3897f1',
+    borderRadius: 5,
+    height: 45,
+    marginTop: 10,
   },
-  errorTextStyle: {
-    color: 'red',
-    textAlign: 'center',
-    fontSize: 14,
+  fbLoginButton: {
+    height: 45,
+    marginTop: 10,
+    backgroundColor: 'transparent',
   },
-});
-
-export default styles;
+};

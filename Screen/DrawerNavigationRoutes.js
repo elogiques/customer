@@ -23,7 +23,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
         <NavigationDrawerHeader navigationProps={navigation} />
       ),
       headerStyle: {
-        backgroundColor: '#fac52e',
+        backgroundColor: '#22bcb5',
       },
       headerTintColor: '#fff',
     }),
@@ -39,7 +39,7 @@ const SecondActivity_StackNavigator = createStackNavigator({
         <NavigationDrawerHeader navigationProps={navigation} />
       ),
       headerStyle: {
-        backgroundColor: '#fac52e',
+        backgroundColor: '#22bcb5',
       },
       headerTintColor: '#fff',
     }),
